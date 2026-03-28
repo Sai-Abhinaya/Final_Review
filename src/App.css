@@ -1,0 +1,86 @@
+/**
+ * App Root Styles
+ * Base styles for the application
+ */
+
+#root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================== Utility Classes ==================== */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ==================== Focus Styles for Accessibility ==================== */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* ==================== Smooth Scrolling ==================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==================== Print Styles ==================== */
+@media print {
+  .app-header,
+  .app-navigation,
+  .btn-refresh {
+    display: none;
+  }
+
+  .app-main {
+    max-width: 100%;
+  }
+}
+
+/* ==================== Dark Mode Support (Optional) ==================== */
+@media (prefers-color-scheme: dark) {
+  /* Can extend dark mode styles here if needed */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #fff !important;
+  border-bottom: 2px solid white;
+}
